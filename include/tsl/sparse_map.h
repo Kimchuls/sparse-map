@@ -25,13 +25,14 @@
 #define TSL_SPARSE_MAP_H
 
 #include <cstddef>
-#include <functional>
+// #include <functional>
 #include <initializer_list>
 #include <memory>
 #include <type_traits>
 #include <utility>
 
 #include "sparse_hash.h"
+#include "functional_hash_local.h"
 
 namespace tsl {
 
