@@ -26,7 +26,7 @@
  *  This is an internal header file, included by other library headers.
  *  Do not attempt to use it directly. @headername{functional}
  */
-
+#pragma once
 #ifndef _FUNCTIONAL_HASH_H
 #define _FUNCTIONAL_HASH_H 1
 
@@ -42,7 +42,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
   /// Specialization for float_array.
   template <typename T>
   using PolymorphicAllocator = boost::container::pmr::polymorphic_allocator<T>;
-  using float_array = std::basic_string<double, std::char_traits<double>, PolymorphicAllocator<double>>;
+  using float_array = std::basic_string<float, std::char_traits<float>, PolymorphicAllocator<float>>;
   template<>
     struct hash<float_array> : public __hash_base<size_t, float_array>
     {
